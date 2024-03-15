@@ -1,0 +1,41 @@
+class employee 
+{
+  String empname;
+  int emp_no;
+  float salary;
+  String emp_design;
+  byte experes;
+  
+  void setemployee(String name,int no,float sal,String des,byte ex)
+  
+  { 
+    empname=name;
+	emp_no=no;
+	salary=sal;
+	emp_design=des;
+	experes=ex;
+	
+  }
+    void getemployee()
+     {
+	  System.out.println(empname+"\t"+emp_no+"\t"+emp_design+"\t"+salary+"\t"+experes+"\n");
+	 
+	 }
+}	 
+  class demoemployee
+  {
+   public static void main(String args[])
+   {
+    employee rahul=new employee();
+	rahul.setemployee("Rahul",128966,50000,"pm",(byte)20);
+	 System.out.println("empname\temp_no\temp_design\tsalary\texperes\n");
+	 rahul.getemployee();
+	  employee rakesh=new employee();
+	  rakesh.empname="Rakesh Batra";
+	  rakesh.emp_no=55556;
+	  rakesh.salary=70000;
+	  rakesh.emp_design="projecthead";
+	  rakesh.experes=(byte)5;
+	  rakesh.getemployee();
+   }
+}
